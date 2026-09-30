@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Evaluation Form</title>
+    <style>
+        .form-group {
+            clear: both;
+            margin-bottom: 15px;
+        }
+        label {
+            float: left;
+            width: 150px; 
+            font-weight: bold;
+        }
+        input, textarea, select {
+            float: left;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Evaluation Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="performance">Performance:</label>
+            <select id="performance" name="performance">
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit Evaluation">
+        </div>
+    </form>
+</body>
+</html>
